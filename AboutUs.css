@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #ffffff, #f9f5ec);
+}
+
+/* Site name style */
+.sitename {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2C2C2C;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 19.1px;
+  font-weight: bold;
+  color: rgb(217, 157, 4);
+  letter-spacing: 2px;
+}
+
+/* Welcome section */
+.sectionclass > .welcome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  background-color: #FFF8E7;
+  border: 3px solid black;
+  margin: 10px 4px 0px 4px;
+  height: 100px;
+}
+
+/* Logos */
+.sectionclass > .welcome > .logo,
+.sectionclass > .welcome > .logo2 {
+  margin: 15px;
+  height: 70px;
+  width: 80px;
+}
+
+/* Header */
+.header {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0px 50px 12px 50px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+}
+
+/* Navbar hover */
+.header > nav > a:hover {
+  color: rgb(217, 157, 4);
+  text-decoration: underline 2px gold;
+  text-underline-offset: 4px;
+}
+
+/* Navbar container */
+.header > nav {
+  display: flex;
+  justify-content: center;
+  gap: 26px; /* even spacing */
+  flex-wrap: wrap;
+}
+
+/* Small logo in navbar */
+.logo1 {
+  height: 26px;
+  width: 26px;
+}
+
+/* Navbar links */
+.header > nav > a {
+  color: #1a1a1a;
+  font-size: 18px;
+  padding: 4px 0; /* cleaner than padding-left */
+  font-weight: bold;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+/* About Section */
+.about-info {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: lightgoldenrodyellow; /* pure white for elegance */
+  color: #1a1a1a; /* dark text */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow for depth */
+}
+
+.about-info h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-info p {
+  margin: 20px 40px;
+  font-size: 22px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.about-value {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-value h2 {
+  margin-left: 40px;
+}
+
+.about-value ul {
+  margin: 10px 0 10px 65px;
+  list-style-type: none;
+}
+
+/* Contact + Map */
+.foot {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 25px;
+  gap: 50px;
+  background-color: lightgoldenrodyellow; /* very soft cream */
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+.about-contact h2 {
+  margin-left: 150px;
+}
+
+.about-contact p {
+  margin: 10px 0;
+}
+
+.footer-map {
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-map iframe {
+  margin-top: 12px;
+  display: block;
+  width: 390px;
+  height: 132px;
+  border-radius: 12px;
+  border: 2px solid darkblue; /* lighter sky blue instead of harsh blue */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* softer, larger shadow */
+  transition: transform 0.25s ease, box-shadow 0.25s ease; /* smooth hover effect */
+}
+
+/* Hover effect */
+.footer-map iframe:hover {
+  transform: scale(1.02); /* slight zoom */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* stronger shadow on hover */
+  border-color: black; /* richer blue on hover */
+}
+
+/* Horizontal rule */
+hr {
+  border: 1.5px solid;
+}
+
+/* Highlight text */
+.highlight {
+  color: #a70526; /* brand red */
+}
+
+.no-underline {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps text color same as parent */
+}
+
+/* Footer */
+.footer {
+  padding: 25px 10px;
+  background-color: rgb(237, 237, 130);
+  color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* Footer Flex Container */
+.footer1 {
+  display: flex;
+  justify-content: space-between;   /* ✅ balanced spacing */
+  flex-wrap: wrap;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1a1a1a;
+  align-items: flex-start;
+  gap: 40px;                        /* ✅ spacing for responsiveness */
+  padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-left,
+.footer-middle,
+.footer-extra,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 10px;
+}
+
+.footer-left {
+  margin-left: 60px;
+}
+
+
+/* Ensure one-line layout for each item */
+.footer-left p {
+  display: flex;            
+  align-items: center;
+  white-space: nowrap;      
+  margin: 5px 0;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.footer-right{
+  margin-left: 20px;
+}
+/* Other section text */
+.footer-middle p,
+.footer-extra p,
+.footer-right p {
+  margin: 5px 0;
+  padding: 0;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.footer-middle
+{
+  margin-left: 124px;
+}
+
+/* Footer Links */
+.footer a {
+  text-decoration: none;
+  color: rgb(1, 1, 80 );
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0077ff;
+}
+
+
+/* Social icons container */
+.social-links a {
+  font-size: 21px;
+  margin: 0 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.social-links a:hover {
+  color: #0077ff;
+}
+
+.social-links a .fa-facebook { color: #1877F2; }   /* Facebook blue */
+.social-links a .fa-instagram { color: #E4405F; }  /* Instagram pink/red */
+.social-links a .fa-home { color: #222; }          /* Trend-Ettic home */
+

@@ -1,0 +1,265 @@
+/* Import Cinzel font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #ffffff, #f9f5ec);
+}
+
+/* Site name style */
+.sitename {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2C2C2C;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 19.1px;
+  font-weight: bold;
+  color: rgb(217, 157, 4);
+  letter-spacing: 2px;
+}
+
+/* Welcome section */
+.sectionclass > .welcome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  background-color: #FFF8E7;             
+  border: 3px solid black; 
+  margin: 10px 4px 0px 4px;
+  height: 100px;
+}
+
+/* Logo in welcome */
+.sectionclass > .welcome > .logo,
+.sectionclass > .welcome > .logo2 {
+  margin: 15px;
+  height: 70px;
+  width: 80px;
+}
+
+/* Header */
+.header {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  padding: 0px 50px 12px 50px;
+}
+
+/* Hover effect */
+.header > nav > a:hover {
+  color: rgb(217, 157, 4);        
+  text-decoration: underline 2px gold;  
+  text-underline-offset: 4px; 
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Small logo in navbar */
+.logo1 { 
+  height: 26px;
+  width: 26px;
+}
+
+/* Navbar links */
+.header > nav > a {
+  color: #1a1a1a;
+  font-size: 18px;
+  padding-left: 26px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+/* Banner image */
+.banner {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Category section title */
+.categorysection h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Lucida Sans', sans-serif;
+  letter-spacing: 2px;
+  color:#1a1a1a;
+}
+
+/* Product container */
+.maindiv {
+  margin-top: 40px;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+/* Product card */
+.maindiv > .product {
+  vertical-align: top;
+  width: 330px;
+  background: #fff;
+  border: 1.5px solid darkcyan;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.maindiv > .product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* Product title */
+.product > h1 {
+  margin-top: 0;
+  padding-top: 5px;
+  letter-spacing: 1px;
+}
+
+/* Product title link */
+.product > h1 > a {
+  text-decoration: none;
+  color: rgb(52, 2, 97);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Product image */
+.product > img {
+  width: 100%;
+  height: 500px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding: 25px 10px;
+  background-color: rgb(237, 237, 130);
+  color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* Footer Flex Container */
+.footer1 {
+  display: flex;
+  justify-content: space-between;   /* ✅ balanced spacing */
+  flex-wrap: wrap;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1a1a1a;
+  align-items: flex-start;
+  gap: 40px;                        /* ✅ spacing for responsiveness */
+  padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-left,
+.footer-middle,
+.footer-extra,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 10px;
+}
+
+.footer-left {
+  margin-left: 60px;
+}
+
+
+/* Ensure one-line layout for each item */
+.footer-left p {
+  display: flex;            
+  align-items: center;
+  white-space: nowrap;      
+  margin: 5px 0;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.footer-right{
+  margin-left: 20px;
+}
+/* Other section text */
+.footer-middle p,
+.footer-extra p,
+.footer-right p {
+  margin: 5px 0;
+  padding: 0;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.footer-middle
+{
+  margin-left: 124px;
+}
+
+/* Footer Links */
+.footer a {
+  text-decoration: none;
+  color: rgb(1, 1, 80 );
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0077ff;
+}
+
+
+/* Social icons container */
+.social-links a {
+  font-size: 21px;
+  margin: 0 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.social-links a:hover {
+  color: #0077ff;
+}
+
+.social-links a .fa-facebook { color: #1877F2; }   /* Facebook blue */
+.social-links a .fa-instagram { color: #E4405F; }  /* Instagram pink/red */
+.social-links a .fa-home { color: #222; }          /* Trend-Ettic home */
+

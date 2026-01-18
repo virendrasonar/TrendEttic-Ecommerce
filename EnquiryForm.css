@@ -1,0 +1,122 @@
+/* Body & Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #c6e2ff, #7fbfff); /* light sky-blue gradient */
+  min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #0f3d91; /* dark blue for contrast */
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  margin-top: 30px;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+}
+
+/* Form Container */
+.myform {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  border: 1px solid #b3d9ff;
+}
+
+/* Labels */
+.myform label {
+  display: block;
+  margin: 12px 0 6px 0;
+  color: #0f3d91;
+  font-weight: 600;
+}
+
+/* Inputs, Select, Textarea */
+.myform input[type="text"],
+.myform input[type="email"],
+.myform input[type="tel"],
+.myform input[type="number"],
+.myform select,
+.myform textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  border: 1px solid #b3d9ff;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  color: #0f3d91;
+}
+
+/* Focus Effect */
+.myform input:focus,
+.myform select:focus,
+.myform textarea:focus {
+  border-color: #0f3d91;
+  box-shadow: 0 0 8px rgba(15,61,145,0.3);
+  outline: none;
+}
+
+/* Textarea Specific */
+.myform textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Fieldset & Legend */
+.myform fieldset {
+  border: 1px solid #b3d9ff;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  background-color: #fdfcff;
+}
+
+.myform legend {
+  font-weight: bold;
+  color: #0f3d91;
+}
+
+/* Checkboxes and Radio Buttons */
+.myform input[type="checkbox"],
+.myform input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #0f3d91; /* modern blue color for check/radio */
+  cursor: pointer;
+}
+
+/* Button */
+.myform button {
+  display: block;
+  background-color: #0f3d91;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 32px;
+  margin: 25px auto 10px auto;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.myform button:hover {
+  background-color: #0b2c6b;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .myform {
+    width: 95%;
+    padding: 20px;
+  }
+}
