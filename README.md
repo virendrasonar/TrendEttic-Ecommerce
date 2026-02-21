@@ -27,7 +27,7 @@ The project focuses on clean UI design, product browsing, and basic cart interac
 ---
 
 ## 📸 Preview
-> Open `index.html` in your browser to view the project.
+> Open 'https://trend-ettic.netlify.app/' in your browser to view the project.
 
 ---
 
