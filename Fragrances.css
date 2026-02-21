@@ -1,273 +1,231 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page background */
 body {
-  background: linear-gradient(135deg, #ffffff, #f9f5ec);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(201,162,39,0.06), transparent 40%),
+    linear-gradient(135deg, #FDFBF6, #E9DFC7);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Site name style */
 .sitename {
   font-family: 'Cinzel', serif;
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #2C2C2C;
+  text-align: center;
+  flex: 1;
 }
 
-/* Tagline */
 .tagline {
-  font-size: 19.1px;
-  font-weight: bold;
-  color: rgb(217, 157, 4);
-  letter-spacing: 2px;
+  display: block;
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(129, 94, 6);
+  letter-spacing: 1px;
 }
 
-/* Welcome section */
 .sectionclass > .welcome {
   display: flex;
   align-items: center;
-  gap: 10px;
-  max-width: 100%;
-  background-color: #FFF8E7;
-  border: 3px solid black;
-  margin: 10px 4px 0px 4px;
-  height: 100px;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background: linear-gradient(135deg, #F4E6B2, #E5D08C);
+  border: 1px solid #C9A227;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+  margin: 20px;
 }
 
-/* Logos */
 .sectionclass > .welcome > .logo,
 .sectionclass > .welcome > .logo2 {
-  margin: 15px;
-  height: 70px;
-  width: 80px;
+  height: 80px;
+  width: 90px;
+  border-radius: 14px;
 }
 
-/* Header */
 .header {
-  max-width: 100%;
-  height: auto;
   text-align: center;
-  padding: 0px 50px 12px 50px;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  border-bottom: 2px solid black;
-  margin-top: 10px;
+  margin-top: 15px;
+  padding: 15px 40px;
 }
 
-/* Navbar hover */
-.header > nav > a:hover {
-  color: rgb(217, 157, 4);
-  text-decoration: underline 2px gold;
-  text-underline-offset: 4px;
-}
-
-/* Navbar container */
-.header > nav {
+.navbar {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 26px; /* even spacing */
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-/* Small logo in navbar */
-.logo1 {
-  height: 26px;
-  width: 26px;
-}
-
-/* Navbar links */
 .header > nav > a {
   color: #1a1a1a;
-  font-size: 18px;
-  padding: 4px 0; /* cleaner than padding-left */
-  font-weight: bold;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 16px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
   text-decoration: none;
-  letter-spacing: 2px;
+  transition: 0.3s ease;
 }
 
-/* Category box */
+.header > nav > a:hover {
+  color: rgb(217, 157, 4);
+}
+
+/* CATEGORY BAR - Soft Cream */
 .topwearcategory {
-  width: 1430px;
-  height: 48px;
-  margin: 20px auto;
-  padding: 0 10px;
-  border: 1px solid black;
-  font-size: 22px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  background-color: bisque;
-  border-radius: 4px;
-  text-align: center;
-  box-sizing: border-box;
+  max-width: 1400px;  
+  height: 60px;
+  margin: 20px auto;  
+  padding: 0 20px;
+  border: 1px solid #E0D6BF;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+background: linear-gradient(135deg, #fbe8b3, #f1d69d);
+  border-radius: 10px;
   display: flex;
-  justify-content: center;  /* horizontally center */
-  align-items: center;      /* vertically center */
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  color: #815E06;
 }
 
-/* Dropdown */
 .topwearcategory select {
-  font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  padding: 6px 12px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-  background: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  padding: 8px 14px;
+  border: 1px solid #D8CCB3;
+  border-radius: 8px;
+  background: #FFFFFF;
+  color: #1A1A1A;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.topwearcategory select:hover {
-  border-color: rgb(217, 157, 4);
-  background: #faf7f0;
-}
-
+.topwearcategory select:hover,
 .topwearcategory select:focus {
+  border-color: #C9A227;
+  box-shadow: 0 0 6px rgba(201,162,39,0.3);
   outline: none;
-  border-color: #0077cc;
-  box-shadow: 0 0 6px rgba(0,119,204,0.6);
 }
 
-/* Main product grid */
+/* PRODUCTS */
 .maindivtopwear {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
-  margin-top: 20px;
+  gap: 50px;
+  margin: 50px auto 100px auto;
   padding: 20px;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  max-width: 1300px;
 }
 
-/* Product card */
 .maindivtopwear > .topwear {
-  box-sizing: border-box;
-  min-height: 500px;   /* flexible height */
-  width: 250px;
-  border: 1px solid black;
-  background: white;
+  width: 270px;
+  background: #FFFDF8;
+  border: 1px solid #E6DDC8;
+  border-radius: 16px;
   text-align: center;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
 }
 
-/* Hover effect */
 .maindivtopwear > .topwear:hover {
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.22);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(201,162,39,0.15);
+  border: 1px solid rgba(201,162,39,0.6);
 }
 
-/* Product image */
 .topwear img {
-  height: 380px;
   width: 100%;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-  border-bottom: 1px solid #eee;
+  height: 360px;
+  object-fit: contain;  
+  background-color: #f5f5f5;  
 }
 
-/* Product content wrapper */
-.topwear .content-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 6px 10px;
-}
-
-/* Product title / name */
 .topwear p {
-  margin: 8px 0 14px 0;
-  font-size: 15px;
-  text-align: center;
+  margin: 12px 0 18px 0;
+  font-size: 14px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
-  line-height: 1.4;
-  color: #222;
-  font-weight: normal;
+  line-height: 1.5;
+  color: #555555;
 }
 
-/* Product links */
 .topwear p a {
   text-decoration: none;
-  color: black;
-  text-align: center;
+  color: #1A1A1A;
+  transition: 0.3s ease;
 }
 
-/* Price section */
+.topwear p a:hover {
+  color: #C9A227;
+}
+
 .pricesection {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12px;
   margin-top: auto;
-  margin-bottom: 12px;
+  padding: 0 10px 15px 10px;
 }
 
-/* Buttons */
 button {
-  width: 85px;
-  height: 32px;
-  border-radius: 12px;
-  font-size: 16px;
-  background-color: #0077cc;
-  color: white;
+  width: 90px;
+  height: 34px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #C9A227;
+  color: #FFFFFF;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #005fa3;
-  transform: scale(1.1);
+  background-color: #B8901F;
+  transform: translateY(-3px);
 }
 
-button:active {
-  background-color: #004c82;
-  transform: translateY(0);
-}
-
-/* Old price */
 .mrp {
   font-size: 12px;
   text-decoration: line-through;
+  color: #8A8A8A;
 }
 
-
-/* Footer */
 .footer {
   margin-top: 50px;
   padding: 25px 10px;
-  background-color: rgb(237, 237, 130);
+  background-color: rgb(236, 236, 108);
   color: #1a1a1a;
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
-/* Footer Flex Container */
 .footer1 {
   display: flex;
-  justify-content: space-between;   /* ✅ balanced spacing */
+  justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #1a1a1a;
   align-items: flex-start;
-  gap: 40px;                        /* ✅ spacing for responsiveness */
+  gap: 40px;
   padding: 0 20px;
 }
 
-/* Footer Sections */
 .footer-left,
 .footer-middle,
 .footer-extra,
@@ -275,28 +233,27 @@ button:active {
   flex: 1;
   min-width: 200px;
   padding: 0 10px;
+  font-weight: 400;
 }
 
 .footer-left {
   margin-left: 60px;
 }
 
-
-/* Ensure one-line layout for each item */
 .footer-left p {
-  display: flex;            
+  display: flex;
   align-items: center;
-  white-space: nowrap;      
+  white-space: nowrap;
   margin: 5px 0;
   font-weight: bold;
   color: #1a1a1a;
   line-height: 1.4;
 }
 
-.footer-right{
+.footer-right {
   margin-left: 20px;
 }
-/* Other section text */
+
 .footer-middle p,
 .footer-extra p,
 .footer-right p {
@@ -307,24 +264,16 @@ button:active {
   line-height: 1.4;
 }
 
-.footer-middle
-{
+.footer-middle {
   margin-left: 124px;
 }
 
-/* Footer Links */
 .footer a {
   text-decoration: none;
-  color: rgb(1, 1, 80 );
+  color: rgb(1, 1, 80);
   transition: color 0.3s ease;
 }
 
-.footer a:hover {
-  color: #0077ff;
-}
-
-
-/* Social icons container */
 .social-links a {
   font-size: 21px;
   margin: 0 20px;
@@ -333,12 +282,38 @@ button:active {
   transition: color 0.3s ease;
 }
 
-/* Hover effect */
-.social-links a:hover {
-  color: #0077ff;
+.footer a:hover {
+  color: #D99D04;
 }
 
-.social-links a .fa-facebook { color: #1877F2; }   /* Facebook blue */
-.social-links a .fa-instagram { color: #E4405F; }  /* Instagram pink/red */
-.social-links a .fa-home { color: #222; }          /* Trend-Ettic home */
+.social-links a:hover {
+  color: #D99D04;
+}
 
+.social-links a {
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.fa-home { color: #222222; }
+.fa-linkedin { color: #0a71d9; }
+.fa-instagram { color: #dd2446; }
+.fa-question-circle { color: #5b0505; }
+
+.social-links a:hover .fa-home {
+  color: rgb(6, 0, 10);
+}
+
+.social-links a:hover:has(.fa-linkedin) i {
+  color: rgb(6, 9, 213);
+}
+
+.social-links a:hover:has(.fa-instagram) i {
+  color: rgb(118, 4, 73);
+}
+
+.social-links a:hover:has(.fa-question-circle) i {
+  color: rgb(2, 10, 43);
+}

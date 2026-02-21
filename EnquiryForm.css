@@ -1,39 +1,41 @@
-/* Body & Background */
+/* Body & Background - Ivory Luxury */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #c6e2ff, #7fbfff); /* light sky-blue gradient */
+  background:
+    radial-gradient(circle at 20% 20%, rgba(201,162,39,0.05), transparent 40%),
+    linear-gradient(135deg, #FDFBF6, #E9DFC7);
   min-height: 100vh;
+  color: #1A1A1A;
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  color: #0f3d91; /* dark blue for contrast */
-  font-family: 'Georgia', serif;
+  color: #3B2A0F;   /* deep warm brown */
+  font-family: 'Cinzel', serif;
   font-size: 42px;
   margin-top: 30px;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
 }
 
 /* Form Container */
 .myform {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #F8F4E8, #EFE6D2);
   width: 90%;
   max-width: 600px;
   margin: 40px auto;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   font-size: 17px;
-  border: 1px solid #b3d9ff;
+  border: 1px solid #E0D6BF;
 }
 
 /* Labels */
 .myform label {
   display: block;
   margin: 12px 0 6px 0;
-  color: #0f3d91;
+  color: #815E06;   /* refined gold-brown */
   font-weight: 600;
 }
 
@@ -48,24 +50,24 @@ h1 {
   padding: 12px;
   margin-bottom: 18px;
   font-size: 15px;
-  border: 1px solid #b3d9ff;
-  background-color: #f0f8ff;
-  border-radius: 8px;
+  border: 1px solid #D8CCB3;
+  background-color: #FFFDF8;
+  border-radius: 10px;
   box-sizing: border-box;
   transition: border 0.3s ease, box-shadow 0.3s ease;
-  color: #0f3d91;
+  color: #1A1A1A;
 }
 
 /* Focus Effect */
 .myform input:focus,
 .myform select:focus,
 .myform textarea:focus {
-  border-color: #0f3d91;
-  box-shadow: 0 0 8px rgba(15,61,145,0.3);
+  border-color: #C9A227;
+  box-shadow: 0 0 8px rgba(201,162,39,0.25);
   outline: none;
 }
 
-/* Textarea Specific */
+/* Textarea */
 .myform textarea {
   height: 100px;
   resize: vertical;
@@ -73,44 +75,45 @@ h1 {
 
 /* Fieldset & Legend */
 .myform fieldset {
-  border: 1px solid #b3d9ff;
-  border-radius: 8px;
+  border: 1px solid #E0D6BF;
+  border-radius: 10px;
   padding: 14px 20px;
   margin-bottom: 20px;
-  background-color: #fdfcff;
+  background-color: #F5EFE2;
 }
 
 .myform legend {
   font-weight: bold;
-  color: #0f3d91;
+  color: #815E06;
+  font-family: 'Cinzel', serif;
 }
 
-/* Checkboxes and Radio Buttons */
+/* Checkboxes & Radio */
 .myform input[type="checkbox"],
 .myform input[type="radio"] {
   margin-right: 8px;
-  accent-color: #0f3d91; /* modern blue color for check/radio */
+  accent-color: #C9A227; /* gold accent */
   cursor: pointer;
 }
 
 /* Button */
 .myform button {
   display: block;
-  background-color: #0f3d91;
-  color: white;
+  background-color: #C9A227;   /* gold button */
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
   padding: 14px 32px;
   margin: 25px auto 10px auto;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .myform button:hover {
-  background-color: #0b2c6b;
-  transform: scale(1.03);
+  background-color: #B8901F;
+  transform: scale(1.05);
 }
 
 /* Responsive */

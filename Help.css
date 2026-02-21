@@ -5,11 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Body */
+/* Body - Ivory Luxury */
 body {
   font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
-  background: linear-gradient(135deg, #eef6fb, #d4e6f9); 
-  color: #333;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(201,162,39,0.05), transparent 40%),
+    linear-gradient(135deg, #FDFBF6, #E9DFC7);
+  color: #1A1A1A;
   line-height: 1.6;
   padding: 20px;
   min-height: 100vh;
@@ -23,14 +25,14 @@ body {
 
 .help-header h1 {
   font-size: 36px;
-  color: #1a3e6f; 
+  color: #3B2A0F;   /* deep warm brown */
   margin-bottom: 8px;
-  text-shadow: 1px 1px 3px rgba(255,255,255,0.7);
+  font-family: 'Cinzel', serif;
 }
 
 .help-header p {
   font-size: 18px;
-  color: #4a7eb5; 
+  color: #815E06;   /* refined gold tone */
   font-weight: 600;
 }
 
@@ -44,34 +46,35 @@ body {
   font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
-  color: #1a3e6f;
+  color: #815E06;
+  font-family: 'Cinzel', serif;
 }
 
 .faq-item {
-  background: #ffffff;
-  border: 1px solid #c3d9f0;
+  background: linear-gradient(135deg, #F8F4E8, #EFE6D2);
+  border: 1px solid #E0D6BF;
   padding: 18px 20px;
   margin-bottom: 18px;
-  border-radius: 12px;
+  border-radius: 16px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-weight:490;
-
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
 
 .faq-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(201,162,39,0.15);
 }
 
 .faq-item h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #1a3e6f;
+  color: #3B2A0F;
 }
 
 .faq-item p {
   font-size: 16px;
-  color: #555;
+  color: #4A4A4A;
 }
 
 /* Additional Help Section */
@@ -79,18 +82,18 @@ body {
   max-width: 900px;
   margin: 20px auto 40px auto;
   padding: 25px;
-  background: #f7fbff; 
-  border: 1px solid #c3d9f0;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  background: #F5EFE2;
+  border: 1px solid #E0D6BF;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
   font-weight: 500;
-  padding-left: 20px;
 }
 
 .additional-help h3 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #1a3e6f;
+  color: #815E06;
+  font-family: 'Cinzel', serif;
 }
 
 .additional-help ul {
@@ -101,17 +104,17 @@ body {
 .additional-help ul li {
   margin-bottom: 12px;
   font-size: 16px;
-  color: #444;
+  color: #4A4A4A;
 }
 
 .additional-help ul li a {
-  text-decoration: underline;
-  color: #3c75b5;
+  text-decoration: none;
+  color: #815E06;
   transition: color 0.3s ease;
 }
 
 .additional-help ul li a:hover {
-  color: #1a3e6f;
+  color: #C9A227;
 }
 
 /* Back button */
@@ -122,16 +125,16 @@ body {
 
 .back-home a {
   text-decoration: none;
-  background: #1a3e6f; /* dark blue button */
-  color: #fff;
+  background: #C9A227;   /* gold button */
+  color: #FFFFFF;
   padding: 12px 28px;
-  border-radius: 8px;
+  border-radius: 25px;
   font-weight: 600;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .back-home a:hover {
-  background: #125288; /* slightly lighter on hover */
+  background: #B8901F;
   transform: scale(1.05);
 }
 
@@ -140,18 +143,18 @@ body {
   text-align: center;
   margin-top: 50px;
   font-size: 14px;
-  color: #1a3e6f;
+  color: #3B2A0F;
 }
 
 .help-footer a {
   text-decoration: none;
-  color: #3c75b5;
+  color: #815E06;
   margin: 0 8px;
   transition: color 0.3s ease;
 }
 
 .help-footer a:hover {
-  color: #125288;
+  color: #C9A227;
 }
 
 /* Responsive */
@@ -159,15 +162,19 @@ body {
   .faq, .additional-help {
     padding: 0 15px;
   }
+
   .help-header h1 {
     font-size: 30px;
   }
+
   .faq h2 {
     font-size: 24px;
   }
+
   .faq-item h3 {
     font-size: 18px;
   }
+
   .additional-help h3 {
     font-size: 20px;
   }
